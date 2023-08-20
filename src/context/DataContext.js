@@ -17,7 +17,7 @@ export const DataProvider = ({ children }) => {
         title: "How to Reach Your Goal",
         author: "Neal Ford",
         image:
-          " https://media.istockphoto.com/id/1402577565/photo/colour-swatches-book.jpg?s=1024x1024&w=is&k=20&c=w3i2tpL3kb_I4b1XZUsuB9Wbaha-og3LOXUIKj-uoQ0=",
+          " https://images.unsplash.com/photo-1592496431122-2349e0fbc666?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9vayUyMGNvdmVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60",
         date: "2023-08-19",
         body: "There are no easy decisions in software architecture. Instead, there are many hard parts--difficult problems or issues with no best practices--that force you to choose among various compromises. With this book, you'll learn how to think critically about the trade-offs involved with distributed architectures.",
         saved: false,
