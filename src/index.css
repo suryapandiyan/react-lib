@@ -1,13 +1,91 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #00eeff;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #2d2d2d;
+}
+body {
+  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  background: rgba(1, 93, 112, 0.498);
+  background: linear-gradient(
+    140deg,
+    rgb(96, 0, 45) 0%,
+    rgb(96, 0, 81) 25%,
+    rgb(149, 0, 127) 52%,
+    rgb(18, 241, 245) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 250% 250%;
+  animation: bg 6s linear infinite;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@keyframes bg {
+  0%,
+  100% {
+    background-position: 0%;
+  }
+  25%,
+  75% {
+    background-position: 30%;
+  }
+  50% {
+    background-position: 60%;
+  }
+}
+#root {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.Footer {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  display: grid;
+  place-content: center;
+  color: #fff;
+}
+.Missing {
+  width: 100%;
+  flex-grow: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #34495e;
+}
+.Missing h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+.Missing p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+/*media queries*/
+@media (max-width: 992px) {
+  html {
+    font-size: 10px;
+  }
 }
